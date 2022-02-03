@@ -11,7 +11,7 @@ Operations:
 1. AWS S3 Bucket Name
 2. List Objects
 3. Content of Objects
-4. Put Object to Bucket
+4. Modify Content of Object
 
 Exit with 'q' button.
 
