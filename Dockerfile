@@ -1,4 +1,4 @@
-FROM python:3
+FROM python:3.8-slim
 
 LABEL maintainer AWS_S3_OPERATION
 
