@@ -73,7 +73,7 @@ jobs:
     - name: Deploy Amazon ECS task definition
       uses: aws-actions/amazon-ecs-deploy-task-definition@v1
       with:
-        task-definition: ${{ steps.render-worker-container.outputs.task-definition }}
+        task-definition: ${{ steps.task-def.outputs.task-definition }}
         service: dogusaytekin-service
         cluster: dogusaytekin-cluster
         wait-for-service-stability: false
