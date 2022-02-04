@@ -7,7 +7,7 @@
         {
             "name": "dogusaytekin-container",
             "image": "546891148301.dkr.ecr.us-east-1.amazonaws.com/dogusaytekin_repo:latest",
-            "memory": "1000",
+            "memoryReservation": "500",
             "resourceRequirements": null,
             "essential": true,
             "portMappings": [],
