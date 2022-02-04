@@ -7,7 +7,13 @@
       "environmentFiles": null,
       "logConfiguration": null,
       "entryPoint": null,
-      "portMappings": [],
+      "portMappings": [
+        {
+          "hostPort": 8080,
+          "protocol": "tcp",
+          "containerPort": 80
+        }
+      ],
       "command": null,
       "linuxParameters": null,
       "cpu": 0,
@@ -19,18 +25,18 @@
       "workingDirectory": null,
       "secrets": null,
       "dockerSecurityOptions": null,
-      "memory": 500,
+      "memory": null,
       "memoryReservation": null,
       "volumesFrom": [],
       "stopTimeout": null,
-      "image": "546891148301.dkr.ecr.us-east-1.amazonaws.com/dogusaytekin_repo:35e8c5bf77074e4f8ed3c3468c04a7bc35dd6901",
+      "image": "546891148301.dkr.ecr.us-east-1.amazonaws.com/dogusaytekin_repo:latest",
       "startTimeout": null,
       "firelensConfiguration": null,
       "dependsOn": null,
       "disableNetworking": null,
       "interactive": null,
       "healthCheck": null,
-      "essential": true,
+      "essential": false,
       "links": null,
       "hostname": null,
       "extraHosts": null,
@@ -40,17 +46,17 @@
       "dockerLabels": null,
       "systemControls": null,
       "privileged": null,
-      "name": "dogus-container"
+      "name": "dogusaytekin-container"
     }
   ],
   "placementConstraints": [],
-  "memory": null,
-  "taskRoleArn": null,
+  "memory": "300",
+  "taskRoleArn": "arn:aws:iam::546891148301:role/ecsTaskExecutionRole",
   "compatibilities": [
     "EXTERNAL",
     "EC2"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:us-east-1:546891148301:task-definition/dogusaytekin-task-definition:8",
+  "taskDefinitionArn": "arn:aws:ecs:us-east-1:546891148301:task-definition/dogusaytekin-task-definition:11",
   "family": "dogusaytekin-task-definition",
   "requiresAttributes": [
     {
@@ -58,6 +64,12 @@
       "targetType": null,
       "value": null,
       "name": "com.amazonaws.ecs.capability.ecr-auth"
+    },
+    {
+      "targetId": null,
+      "targetType": null,
+      "value": null,
+      "name": "com.amazonaws.ecs.capability.task-iam-role"
     }
   ],
   "pidMode": null,
@@ -66,8 +78,8 @@
   ],
   "networkMode": null,
   "runtimePlatform": null,
-  "cpu": null,
-  "revision": 8,
+  "cpu": "300",
+  "revision": 11,
   "status": "ACTIVE",
   "inferenceAccelerators": null,
   "proxyConfiguration": null,
