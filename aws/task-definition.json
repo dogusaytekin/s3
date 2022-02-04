@@ -36,7 +36,7 @@
       "disableNetworking": null,
       "interactive": null,
       "healthCheck": null,
-      "essential": false,
+      "essential": true,
       "links": null,
       "hostname": null,
       "extraHosts": null,
